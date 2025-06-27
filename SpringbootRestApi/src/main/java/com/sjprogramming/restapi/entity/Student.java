@@ -20,12 +20,21 @@ public class Student {
     }
 
 
+    // Existing 3-arg constructor
     public Student(String name, float percentage, String branch) {
-        super();
         this.name = name;
         this.percentage = percentage;
         this.branch = branch;
     }
+
+    // ✅ Add this 4-arg constructor for testing
+    public Student(int rollNo, String name, float percentage, String branch) {
+        this.rollNo = rollNo;
+        this.name = name;
+        this.percentage = percentage;
+        this.branch = branch;
+    }
+
 
 
     public int getRollNo() {
